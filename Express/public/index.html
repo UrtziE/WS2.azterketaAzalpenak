@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LocalStorage</title>
+
+    <!-- Incluimos Bootstrap para que se vea bien sin esfuerzo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="LocalStorage.js"></script>
+    <style>
+        /* Un poco de estilo extra para separar las secciones */
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Registro de Mascotas</h1>
+
+    <!-- 1. EL FORMULARIO -->
+    <form id="mascotaForm">
+        <!-- Campo Nombre -->
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Tu Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+        </div>
+
+        <!-- Campo Edad -->
+        <div class="mb-3">
+            <label for="edad" class="form-label">Tu Edad</label>
+            <input type="number" class="form-control" id="edad" required>
+        </div>
+
+        <!-- Campo Mascota -->
+        <div class="mb-3">
+            <label for="nombreMascota" class="form-label">Nombre de la Mascota</label>
+            <input type="text" class="form-control" id="nombreMascota" required>
+        </div>
+
+        <!-- Campo Raza -->
+        <div class="mb-3">
+            <label for="razaMascota" class="form-label">Raza de la Mascota</label>
+            <input type="text" class="form-control" id="razaMascota" required>
+        </div>
+
+        <!-- 2. BOTÓN PARA MANDAR EL FORMULARIO -->
+        <button type="submit" class="btn btn-primary w-100">Gorde Datuak</button>
+    </form>
+
+    <hr class="my-4">
+
+    <!-- 3. BOTÓN PARA ENSEÑAR LOS DATOS -->
+    <div class="d-grid">
+        <button type="button" id="mostrarDatosBtn" class="btn btn-secondary">Erakutsi Gordetako Datuak</button>
+    </div>
+
+    <div class="d-grid  mt-3">
+        <button type="button" id="ezabatuDena" class="btn btn-secondary">Ezabatu Dena</button>
+    </div>
+    <div class="d-grid  mt-3">
+        <button type="button" id="igoZerbitzariraUnekoa" class="btn btn-secondary">igoZerbitzariraUnekoa</button>
+    </div>
+    <div class="d-grid  mt-3">
+        <button type="button" id="igoDenakZerbitzarira" class="btn btn-secondary">igoZerbitzariraDenak</button>
+    </div>
+    <div class="d-grid  mt-3">
+        <button type="button" id="aktualizatuBat" class="btn btn-secondary">Aktualizatu Bat</button>
+    </div>
+    <div class="d-grid  mt-3">
+        <button type="button" id="ErakutsiZerbitzarikoak" class="btn btn-secondary">ErakutsiZerbitzarikoak</button>
+    </div>
+
+
+    <!-- 4. SITIO PARA PRINTEAR LOS DATOS -->
+    <div id="datosGuardados" class="mt-4">
+        <p class="text-muted text-center">Local Storagean gordetako datuak hemen egongo dira</p>
+    </div>
+
+</div>
+</body>
+</html>
