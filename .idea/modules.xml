@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/2.PartzialaPrestatzen.iml" filepath="$PROJECT_DIR$/2.PartzialaPrestatzen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocalStorage/LocalStorage.iml" filepath="$PROJECT_DIR$/LocalStorage/LocalStorage.iml" />
       <module fileurl="file://$PROJECT_DIR$/Marraztu/Marraztu.iml" filepath="$PROJECT_DIR$/Marraztu/Marraztu.iml" />
     </modules>
   </component>

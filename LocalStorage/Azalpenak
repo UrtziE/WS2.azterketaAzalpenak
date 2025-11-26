@@ -1,0 +1,10 @@
+Garrantzitsua da:
+1- LocalStoragean bakarrik String-ak gorde daitezke, horretarako JSON.Stringify erabili behar da.
+2- LocalStoragetik bakarrik String-ak lor ditzakezu.
+3- local Storagean get("xxxx") egitean, xxxx etiketa ez badago null itzuliko du, horregatik garrantzitsua da:
+let emaitza= localStorage.getItem("xxxx")||"[]"; egitea. hau da, null itzuli beharrean, emaitza [] izango da ,
+String jarri dut, gero egiteko JSON.parse(emaitza).
+4- Kontuz botoiak getElementById egitean eta addEventListener egitean, gaizki egin dezakezulako.
+5- LocalStorage guztia borratu nahi baduzu egin localStorage.clear() , etiketa bat borratu nahi baduzu egin:
+localStorage.removeItem("xxxx") eta nahi baduzu etiketa mantendu eta hutsik utzi barrukoa, setItem("xxxx","[]").
+6- div.InnerHTML="" egiten da, borratzeko div-ek barruan dituen guztiak.
