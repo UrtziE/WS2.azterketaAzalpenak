@@ -1,0 +1,17 @@
+/*OHARRAK
+* STROKEK--> ez dio eragiten fillRect-eri
+* FILL-ek --> ez dio eragiten strokeRect-eri
+* bati aldatzean context batean, denei aldatu
+* lerro zabalera bakarrik stroke dutenei
+* Bata bestearen gainean es sartzeko erabili context ezberdinak.
+* STROKE ARC ETA GERO ERE EGIN BEHARRA DA, BAKARRIK EZ DA EGIN BEHAR FILLRECT ETA STROKERECT-en
+*Bakarrik fill eginda stroke gabe bakarrik triangeluaren barrukoa.
+*/
+
+
+EGITEKO REJILLENA OSO ERRAZA:
+egin x ejean hau da x,0-tik canvas-zabalera,0 -ra (for-eko baldintza)
+marraztu lerroak bertikalean, hau da x,0-tik x, canvas luzera arte(for barruan)
+
+Bigarren for-ean alderantziz, 0,y -tik 0, canvas.luzera arte (for baldintza)
+for barruan, mugitu(moveTo) 0,y-ra eta marraztu(lineTo) canvas.zabalera,y-ra arte.
